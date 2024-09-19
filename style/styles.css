@@ -12,10 +12,15 @@
 }
 body{
     background-color: #FFFFFF;
-    width: 500px;
-    height: 656px;
-    margin: 0;
+    margin: auto;
+    font-family: 'Cera Pro';
 }
+
+.conteiner{
+    width: 500px;
+    margin: 0 auto;
+}
+
 .x{
     display: flex;
     justify-content: end;
@@ -31,10 +36,10 @@ body{
 .header{
     display: flex;
     align-items: center;
-    padding: 21px 171px 0 172px;
+    justify-content: center;
+    padding: 21px 0;
 }
 .Login{
-    font-family: 'Cera Pro';
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -43,7 +48,6 @@ body{
     margin: 0 0 0;
 }
 .slash{
-    font-family: 'Cera Pro';
     font-weight: 250;
     font-size: 18px;
     line-height: 16px;
@@ -51,7 +55,6 @@ body{
     margin: 0 0 0;
 }
 .Register{
-    font-family: 'Cera Pro';
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -60,69 +63,49 @@ body{
     margin: 0 0 0;
 }
 .title{
-    font-family: 'Cera Pro';
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
-    margin: 40px 100px 14px 100px;
+    padding: 40px 0 14px 100px;
+    margin: 0;
 }
-.input_username{
-    width: 65px;
-    height: 16px;
-    font-family: 'Cera Pro';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3D3D3D;
-    padding: 12px 221px 12px 14px;
-    border-radius: 5px;
-    border-color: #EAEAEA;
-    border-width: 1px;
-    border-style:solid;
-}.input_email{
-    width: 160px;
-    height: 16px;
-    font-family: 'Cera Pro';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3D3D3D;
-    padding: 12px 126px 12px 14px;
-    border-radius: 5px;
-    border-color: #EAEAEA;
-    border-width: 1px;
-    border-style:solid;
-}.input_password{
-    width: 100%;
-    height: 100%;
-    font-family: 'Cera Pro';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3D3D3D;
-    border: 0;
-    padding: 0;
-}.input_confirm_pass{
-    width: 118px;
-    height: 16px;
-    font-family: 'Cera Pro';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3D3D3D;
-    padding: 12px 168px 12px 14px;
-    border-radius: 5px;
-    border-color: #EAEAEA;
-    border-width: 1px;
-    border-style:solid;
-}
+
 .form{
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 0 100px 0 100px;
     height: 340px;
+}
+
+.form input{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 5px;
+    border-color: #EAEAEA;
+    border-width: 1px;
+    border-style:solid;
+    color: #3D3D3D; 
+}
+
+.input_username{
+    width: 65px;
+    padding: 12px 221px 12px 14px;
+
+}.input_email{
+    width: 160px;
+    padding: 12px 126px 12px 14px;
+
+}.input_password{
+    width: 100%;
+    border: 0 !important;
+    padding: 0;
+}
+.input_confirm_pass{
+    width: 118px;
+    padding: 12px 168px 12px 14px;
 }
 .eye{
     width: 20px;
@@ -140,29 +123,24 @@ body{
 }
 .submit{
     background-color: #46A358;
-    font-family: 'Cera Pro';
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     color: #FFFFFF;
     padding: 16px 118px 13px 119px;
     border-radius: 5px;
-    border: 0;
-    margin: 25px 0 0 0;
+    border: 0 !important;
 }
-.footer{
-    height: 138px;
-    padding: 0 100px;
-}
+
 .footer_title{
     width: 300px;
     height: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 100px;
 }
 .footer_title_text{
-    font-family: 'Cera Pro';
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -174,11 +152,11 @@ body{
 .btns{
     display: flex;
     flex-direction: column;
+    padding: 0 100px;
 }
 .links_text{   
     width: 149px;
     height: 16px; 
-    font-family: 'Cera Pro';
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
@@ -221,8 +199,4 @@ body{
     border-width: 1px;
     margin: 15px 0 40px 0;
     padding: 0;
-}
-.Rectangle{
-    width: 500px;
-    height: 10px;
 }
