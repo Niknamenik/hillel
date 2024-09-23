@@ -105,10 +105,7 @@ body{
     width: 118px;
     padding: 12px 168px 12px 14px;
 }
-.eye{
-    width: 20px;
-    height: 20px;
-}
+    
 .hider{
     display: flex;
     justify-content: space-between;
