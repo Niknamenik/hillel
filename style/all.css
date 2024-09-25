@@ -25,7 +25,7 @@
 body{
     background-color: #FFFFFF;
     margin: auto;
-    font-family: 'Cera Pro';
+    font-family: 'Cera Pro', sans-serif;
 }
 
 .conteiner{
