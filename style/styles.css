@@ -38,6 +38,10 @@ body{
     margin: 0 auto;
 }
 
+button{
+    cursor: pointer;
+}
+
 .header{
     display: flex;
     justify-content: space-between; 
