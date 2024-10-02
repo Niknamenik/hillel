@@ -137,6 +137,13 @@ header div {
     line-height: 12px;
     letter-spacing: 2px;
 }
+.card_content p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #E3E3E3;
+}
 .meet_a_partner{
     margin-top: 95px;
     display: flex;
@@ -161,6 +168,13 @@ header div {
     font-weight: 700;
     line-height: 17px;
     padding: 17px 0 12px;
+}
+.profile p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #666666;
 }
 .meet_a_partner button{
     border: 2px solid #FF4E50;
