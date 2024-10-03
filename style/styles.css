@@ -265,12 +265,24 @@ li{
 
 }
 
-.plant_price{
+.product_price{
+    display: flex;
+    column-gap: 16px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 16px;
+}
+
+.plant_price{
+    font-weight: 700;
     color:#46A358;
     margin: 0;
+}
+
+.plant_price_discount{
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-weight: 400;
+
 }
 
 .offer_products{
@@ -279,6 +291,55 @@ li{
     row-gap: 70px;
     column-gap: 33px;
     padding-top: 30px;
+}
+
+.offer_product_img { 
+    position: relative;
+    transition: 0.3s ease;
+    border-top: 2px solid #FBFBFB;
+}
+
+.offer_product:hover .offer_product_img{
+    border-color:  #46A358;
+}
+
+.offer_product:hover .feauter_bar{
+    opacity: 1;
+}
+
+.invisible_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 26px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.invisible_bar button{
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px 9px 7px 6px;
+}
+
+.badge{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    background-color: #46A358;
+}
+
+.badge p { 
+    padding: 7px 8px 6px 9px;
 }
 
 .pages{
