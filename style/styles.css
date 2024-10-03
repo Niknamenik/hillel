@@ -320,14 +320,14 @@ li{
     padding-bottom: 8px;
 }
 
-.invisible_bar button{
+.invisible_bar button {
     border: none;
     border-radius: 4px;
     background-color: #fff;
     padding: 8px 9px 7px 6px;
 }
 
-.badge{
+.badge {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -349,7 +349,7 @@ li{
     padding-top: 90px;
 }
 
-.pages button{
+.pages button {
     padding: 9px 13px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
@@ -358,18 +358,18 @@ li{
     line-height: 16px;
     background-color: #fff;
 }
-.pages button:first-child{
+.pages button:first-child {
     color: #fff;
     font-weight: 700;
     background-color: #46A358;
     padding: 9px 14.4px;
 }
 
-.pages button:last-child{
+.pages button:last-child {
     padding: 9px 9px;
 }
 
-.information{
+.information {
     padding-top: 93px;
     display: flex;
     flex-direction: column;     
