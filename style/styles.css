@@ -303,7 +303,7 @@ li{
     border-color:  #46A358;
 }
 
-.offer_product:hover .feauter_bar{
+.offer_product:hover .invisible_bar{
     opacity: 1;
 }
 
