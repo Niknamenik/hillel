@@ -32,6 +32,10 @@ body{
     font-family: 'Cera Pro', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .conteiner{
     width: 84% ; 
     max-width: 1200px;
@@ -51,30 +55,101 @@ button{
 .navigation_items{
     display: flex;
     align-items: center;
-    list-style-type: none;
-    gap: 50px;
+    column-gap: 50px;
     padding: 8px 0 0 0;
-    margin: 0;
-    height: 45px;
+    margin: 0;  
 }
 
-a{
-    text-decoration: none;
+.outer_menu:first-of-type{
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
 }
 
-.navigation_items a{
+.outer_menu:hover{
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
+}
+
+.outer_menu{
+    transition: 0.5s ease;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: #3D3D3D;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
 }
 
-.navigation_items li:first-child a{
-    color: #3D3D3D;
+.navigation_items li:hover .first_menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.first_menu{
+    position: absolute;
+    opacity: 0;
+    top: 55px;
+    visibility: hidden;
+    background-color: #EDF6EE;
+    left: -60px;
+    transition: 0.6s ease-in-out;
+    padding: 0;
+}
+
+.first_menu li{
+    width: 157px;
+    height: 35px;
+    align-content: center;
+    position: static;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    padding: 0 17px 0 14px;
+}
+
+.first_menu li:hover{
+    background-color: #46A358;
+    color: #fff;
     font-weight: 700;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #46A358;
+}
+
+    .first_menu li:last-child:hover svg{
+        transform: rotate(180deg);
+}
+
+.first_menu li:last-child:hover svg path{
+    fill: white;
+}
+
+.first_menu li:last-child div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first_menu li:hover .second_menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.second_menu{
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    top: 0;
+    left: 190px;
+    visibility: hidden;
+    background-color: #EDF6EE;
+    transition: 0.6s ease-in-out;
+}
+
+.second_menu li{
+    min-width: 17px;
+    height: 35px;
+    color: #3D3D3D;
+    font-weight: 400;
 }
 
 .btn{
