@@ -457,9 +457,10 @@ li{
 }
 
 .plant_info{
-    background: url(../img/plants_imgs/blog/summer_cactus_back.png)100% 100% no-repeat;
     display: flex;
-    justify-content: space-between;
+    width: calc(100% - 28px);
+    position: relative;
+    background-color: #FBFBFB;
 }
 
 .plant_info div{
@@ -469,6 +470,7 @@ li{
     justify-content: end;
     padding-right: 30px;
     margin-bottom: 46px;
+    width: 100%;
 }
 
 .plant_info h3{
@@ -476,7 +478,8 @@ li{
     font-size: 18px;
     font-weight: 900;
     line-height: 24px;
-    margin: 0;
+    width: 150px;
+    margin-top: 37px 0 0 0;
 }
 
 .plant_info p{
@@ -486,11 +489,13 @@ li{
     line-height: 24px;
     margin: 9px 0 25px 0;
     color: #727272;
+    width: 50%;
 }
 
 .plant_info_img {
-    padding-bottom: 10px;
-    width: 46%;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
 }
 
 .plant_info button{
@@ -596,4 +601,179 @@ li{
 
 .blog_posts h6:last-of-type img{
     padding-top: 2px;
+}
+
+.footer_cards{
+    padding: 24px 25px 24px 23px;
+    display: flex;
+    background-color: #FBFBFB;
+}
+
+.footer_cards hr{
+    margin: 0 30px;
+    height: 187px;
+    border-right: 1px solid #46A358;
+    opacity: 0.1;
+    margin-top: 6px;
+}
+.footer_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    max-width: 204px;
+}
+
+.footer_card h5{
+    margin: 17px 0 9px 0;
+    font-weight:700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #3D3D3D  ;
+}
+
+.footer_card p{
+    margin: 0;
+    font-weight:400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+}
+
+.footer_input{
+    width: 30.7%;
+    font-weight:400;
+    font-size: 13px;
+    line-height: 22px;
+    padding-left: 62px;
+    color: #727272;
+}
+
+.footer_input h5{
+    font-weight:700;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 13px 0 25px 0;
+    color: #3D3D3D;
+}
+
+.footer_input input{
+    padding: 12px 86px 12px 11px;
+    color: #ACACAC;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 172px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.06);
+}
+
+.footer_input input::placeholder{
+    color: #ACACAC;
+
+}
+
+.footer_input button{
+    color: #fff;
+    background-color: #46A358;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 12px 25px;
+    font-weight:700;
+    font-size: 18px;
+    line-height: 16px;
+
+}
+
+.footer_cards form{
+    display: flex;
+    padding-bottom: 18px;
+}
+
+.first_card{
+    background: url(../img/footer_elipse1.png)0 17%,
+                url(../img/For_garden_care.svg)11% 0;
+    background-repeat: no-repeat;
+}
+.second_card{
+    background: url(../img/footer_elipse2.png)0 14%,
+                url(../img/for_plant_renovarion.svg)11% 0;
+    background-repeat: no-repeat;
+}
+.third_card{
+    background: url(../img/footer_elipse3.png)0 13%,
+                url(../img/for_watering_graden.svg)6% 0;
+    background-repeat: no-repeat;
+}
+
+.footer_middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 23px;
+    font-weight:400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3D3D3D;
+    background: linear-gradient(to right,#EDF6EF, #52C368 );
+
+}
+
+.footer_middle div{
+    display: flex;
+    align-items: center;
+}
+
+.footer_middle div img{
+    width: 20px;
+    padding-right: 9px;
+}
+
+.site_map{
+    display: flex;
+    justify-content: space-between;
+    font-weight:400;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 33px 155px 29px 25px;
+    background-color: #FBFBFB;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+}
+
+.site_map h5{
+    font-weight:700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+    margin: 0;
+}
+
+.site_map ul{
+    padding: 0;
+    margin: 8px 0;
+}
+
+.social_media_links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 33px;
+}
+
+.social_media_links a{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.we_accept{
+    padding-top: 13px;
+}
+
+.all_rights_reserved{
+    font-weight:400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    padding: 6px 0 22px 0;
 }
