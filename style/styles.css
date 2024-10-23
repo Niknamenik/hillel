@@ -570,7 +570,7 @@ input[type="range"]::-moz-range-track {
     padding: 8px 9px 7px 6px;
 }
 
-.invisible_bar button:active{
+.invisible_bar button:active svg{
     transform: scale(1.05);
 }
 
