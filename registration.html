@@ -8,11 +8,15 @@
     <title>Registration</title>
 </head>
 <body>
+    <div class="preloader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path fill="none" stroke="#FF156D" stroke-width="15" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg></div>
+    
     <header>
         <div class="header_conteiner conteiner">
             <div class="x">
                 <a class="btn_x" href="index.html">
-                    <img src="./img/Vector_139.svg" alt="btn_x">
+                    <svg width="18" height="18" fill="none">
+                        <use href="./img/sprite.svg#X_btn" x="0" y="0"></use>
+                      </svg>
                 </a>
             </div>
             <div class="header">
@@ -31,32 +35,52 @@
             <input class="input_email" type="email" name="email" placeholder="Enter your email address" required>
             <div class="hider">
                 <input class="input_password" type="password" name="password" placeholder="Password" required>
-                <img class="eye" src="./img/Hide.svg" alt="hide">
+                <svg width="20" height="20" fill="none">
+                    <use href="./img/sprite.svg#hide_pass" x="0" y="0"></use>
+                  </svg>
             </div>
             <input class="input_confirm_pass" type="password" name="confirm password" placeholder="Confirm Password" required>
-                <input class="submit" type="submit" value="Register">
+            <input class="submit" type="submit" value="Register">
+        </form>
+        <form action="" class="checkboxes conteiner">
+            <label class="custom_checkbox" for="check">
+                <input type="checkbox" id="check">
+                <div class="custom_checkbox_icon"></div>
+                <p>Remember ME</p>
+            </label>
+            <label class="custom_checkbox" for="pp">
+                <input type="checkbox" id="pp">
+                <div class="custom_checkbox_icon"></div>
+                <p>Privacy policy accept</p>
+            </label>
         </form>
     </main>
     <footer class="footer conteiner">
         <div class="footer_title">
-            <img class="lines" src="./img/Line_7.svg" alt="line">
+            <span></span>
             <h3 class="footer_title_text">Or register with</h3>
-            <img class="lines" src="./img/Line_8.svg" alt="line">
+            <span></span>
         </div>
         <div class="btns">
-            <div class="btn_google">
+            <a class="btn_links" href="https://www.google.com/">
                 <img class= "imgs_links" src="./img/google_1.png" alt="google_icon">
-                <a class="links_text" href="https://www.google.com/">Continue with Google</a>
-            </div>
-            <div class="btn_facebook">
+                Continue with Google
+            </a>
+            <a class="btn_links" href="https://www.facebook.com/">
                 <img class="imgs-links" src="./img/facebook_1.png" alt="facebook_icon">
-                <a class="links_text" href="https://www.facebook.com/">Continue with Facebook</a>
-            </div>
+                Continue with Facebook
+            </a>
         </div>
     </footer>
     <div class="Rectangle conteiner">
-        <img src="./img/Rectangle_55.jpg" alt="Rectangle">
+        <span></span>
     </div>
-    
+    <script>
+        window.onload = function() {
+            const preloader = document.querySelector('.preloader');
+
+            preloader.classList.add('hidden')
+        }
+    </script>
 </body>
 </html>
