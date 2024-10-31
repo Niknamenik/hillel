@@ -37,7 +37,7 @@ a{
 }
 
 .conteiner{
-    width: 84% ; 
+    width: 100% ; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -51,11 +51,17 @@ button{
     justify-content: space-between; 
     padding-top: 30px;
     border-bottom: 0.3px solid #46A35880;
+
 }
+
+.navigation{
+    width: 29.5%;
+}
+
 .navigation_items{
     display: flex;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 14.28%;
     padding: 8px 0 0 0;
     margin: 0;  
 }
@@ -81,6 +87,10 @@ button{
     border-bottom: 3px solid transparent;
 }
 
+.plant_care{
+    min-width: 79px;
+}
+
 .navigation_items li:hover .first_menu{
     opacity: 1;
     visibility: visible;
@@ -95,6 +105,7 @@ button{
     left: -60px;
     transition: 0.6s ease-in-out;
     padding: 0;
+    z-index: 2;
 }
 
 .first_menu li{
@@ -283,22 +294,33 @@ button{
 }
 
 .plants{
-    padding: 300px 0 0 150px;
     width: 100%;
-    background: url(../img/plant_1.png) 100% 100% no-repeat;
+    position: relative;
 }
+.plants img:first-child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.plants img:last-child{
+    position: relative;
+    bottom: -300px;
+    left: 140px;
+}
+
 
 .offer_conteiner{
     display: flex;
     margin-top: 26px;
-    gap: 50px;
+    gap: 4.16%;
 }
 
 .offer_navigation_conteiner{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #FBFBFB;
+    width: 25.86%;
+    min-width: 191px;
 }
 
 .offer_navigation_items{
@@ -428,7 +450,7 @@ input[type="range"]::-moz-range-track {
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 310px;
+    width: 100%;
     height: 470px;
     background: url(../img/sale_background.svg),
     url(../img/plants_imgs/On_sale_plant.png) 50% 100% no-repeat;
@@ -471,10 +493,6 @@ input[type="range"]::-moz-range-track {
 .offer_product_navigation a:hover{
     color:#46A358;
     border-bottom: 2px solid #46A358;
-}
-
-
-.offer_product_navigation a:active{
     font-weight: 700;
 }
 
@@ -528,11 +546,15 @@ input[type="range"]::-moz-range-track {
 
 }
 
+.offer_product_conteiner{
+    width:70%
+}
+
 .offer_products{
     display: flex;
     flex-wrap: wrap;
     row-gap: 70px;
-    column-gap: 33px;
+    justify-content: space-between;
     padding-top: 30px;
 }
 
@@ -849,7 +871,7 @@ input[type="range"]::-moz-range-track {
     font-weight:400;
     font-size: 13px;
     line-height: 22px;
-    padding-left: 62px;
+    padding-left: 5%;
     color: #727272;
 }
 
@@ -1041,4 +1063,147 @@ input[type="range"]::-moz-range-track {
     line-height: 30px;
     text-align: center;
     padding: 6px 0 22px 0;
+}
+
+@media screen and (max-width:1199px) {
+    .blog_posts{
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+    }
+    .footer_input input{
+        width: 72%;
+        padding: 12px 0 12px 11px;
+        min-width: 170px;
+    }
+    .plants img:first-child{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .plants img:last-child{
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+    }
+    .more_info{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 80px;
+    }
+    .plant_info{
+        width: 50%;
+        min-width: 533px;
+    }
+    .header{
+        position: fixed;
+        background-color: #fff;
+        left: center;
+        z-index: 10;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width:1123px){
+    .main_conteiner{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .main{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        background: url(../img/plant_2.png) 0% 90% no-repeat,
+                    url(../img/plant_2.png) 100% 90% no-repeat;
+    }
+    .plants{
+        display: none;
+    }
+    .super_sale h3{
+        text-align: center;
+    }
+}
+@media screen and (max-width:915px){
+    .footer_cards{
+        flex-wrap:wrap;
+        row-gap: 20px;
+    }
+    .footer_input{
+        width: 50%;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:783px){
+    .footer_input{
+        padding-left: 60px;
+    }
+    .site_map{
+        padding: 33px 25px 29px 25px;
+    }
+}
+@media screen and (max-width:767px){
+    .navigation{
+        position: absolute;
+        left: 160px;
+    }
+    .navigation_items{
+        position: absolute;
+        flex-direction: column;
+        left: -140px;
+        top: 40px;
+        transition: 0.4s ease;
+    }
+    
+    .navigation_items .outer_menu{
+        border-bottom: none ;
+    }
+    .first_menu{
+        top: 0;
+        left: 80px;
+    }
+    .navigation_items::before{
+        content: "Home ⮇";
+        cursor: pointer;
+        font-weight: 700;
+        z-index: -1;
+        background-color: #EDF6EE;
+        padding: 5px;
+        border: 1px solid #46a3592f;
+        opacity: 0.8;
+    }
+    .outer_menu{
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s ease;
+    }
+    .navigation_items:hover{
+        background-color: #EDF6EE;
+    }
+    .navigation_items:hover .outer_menu{
+        opacity: 1;
+        visibility:visible;
+    }
+    .offer_product_navigation{
+       position: relative; 
+    }
+    .offer_product_navigation::before{
+        content: "All Plants ⮇";
+        cursor: pointer;
+        font-weight: 700;
+        z-index: -1;
+    }
+    .offer_product_navigation ul{
+        flex-direction: column;
+        position: absolute;
+    }
+    .offer_product_navigation ul li{
+        display: none;
+    }
+    .offer_product_navigation:hover ul li{
+        display: list-item
+    ;
+    }
+    
 }
