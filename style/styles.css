@@ -1325,6 +1325,12 @@ input[type="range"]::-moz-range-track {
     }
     
 }
+@media screen and (max-width:490px){
+    .second_menu{
+        bottom: 0;
+        left: 0;
+    }
+}
 @media screen and (max-width:400px){
     .search{
         position: fixed;
