@@ -1101,15 +1101,15 @@ input[type="range"]::-moz-range-track {
     .header{
         position: fixed;
         background-color: #fff;
-        left: center;
         z-index: 10;
-        padding-bottom: 5px;
+    }
+    .main_conteiner{
+        padding-top: 80px;
     }
 }
 @media screen and (max-width:1123px){
     .main_conteiner{
         flex-wrap: wrap;
-        padding-top: 30px;
     }
     .main{
         padding: 0;
@@ -1174,16 +1174,13 @@ input[type="range"]::-moz-range-track {
         opacity: 0.8;
     }
     .outer_menu{
-        opacity: 0;
-        visibility: hidden;
-        transition: 1s ease;
+        display: none;
     }
     .navigation_items:hover{
         background-color: #EDF6EE;
     }
     .navigation_items:hover .outer_menu{
-        opacity: 1;
-        visibility:visible;
+        display: list-item;
     }
     .offer_product_navigation{
         position: relative;
@@ -1201,9 +1198,9 @@ input[type="range"]::-moz-range-track {
         flex-direction: column;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 20px;
         z-index: 2;
-        background-color: #E5E5E5;
+        background-color: #e5e5e554;
         row-gap: 10px;
     }
     .offer_product_navigation ul li{
@@ -1220,11 +1217,153 @@ input[type="range"]::-moz-range-track {
     }
     .offer_product_navigation ul:hover li{
         display: list-item;
-        background-color: #E5E5E5;
+        background-color: #e5e5e554;
         color: #fff;
     } 
     .offer_product_navigation ul li a:hover{
         border-bottom: none;
     }
+    .footer_middle{
+        flex-wrap: wrap ;
+    }
+    .site_map{
+        flex-wrap: wrap;
+    }
+    .main article{
+        width: 100%;
+    }
+    .outer_menu{
+        z-index: 1;
+    }
+    .first_menu{
+        z-index: 1;
+    }
+}
+@media screen and (max-width:755px){
+    .offer_navigation_items{
+        position: absolute;
+        z-index: 3;
+        background-color: #fbfbfb5b;
+        left: -200px;
+        transition: 0.5s ease;
+    }
+    .offer_navigation_conteiner::after{
+        content: ">";
+        position: absolute;
+        padding: 6px 10px;
+        background-color: #71b37d;
+        cursor: pointer;
+        bottom: 0;
+    }
+    .offer_navigation_conteiner:hover .offer_navigation_items{
+        left: 0;
+    }
+    .super_sale{
+        display: none;
+    }
+    .offer_navigation_conteiner{
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+
+        position: relative;
+    }
+    .offer_product_conteiner{
+        width: 100%;
+    }
+    .offer_conteiner{
+        gap: 0;
+    }
+    .footer_cards hr{
+        display: none;
+    }
+    .footer_card{
+        height: 187px;
+    }
+    .footer_cards{
+        justify-content: space-between;
+    }
+    .footer_input{
+        padding: 0;
+    }
+    .offer_products{
+        justify-content: center;
+        align-items:center ;
+    }
+    .footer_middle div{
+        width: 196px;
+    }
+    .footer_middle{
+        row-gap: 10px;
+    }
     
+}
+@media screen and (max-width:550px){
+    .footer_input{
+        min-width:265px;
+    }
+    .plant_info{
+        min-width: 289px;
+    }
+    .plant_info div{
+        padding-top: 300px;
+        padding-right: 0;
+        
+        align-items: center;
+    }
+    .plant_info_img{
+        top: 0;
+        left: 0;
+    }
+    .plant_info h3{
+        text-align: center;
+        width: 100%;
+    }
+    .plant_info p{
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .search{
+        position: fixed;
+        top: 55px;
+        right: 55px;
+    }
+    .basket{
+        position: fixed;
+        top: 55px;
+        right: 15px;
+    }
+    .main{
+        background: none;
+    }
+    .plant_info div{
+        padding: 0;
+    }
+    .plant_info{
+        flex-direction: column;
+        min-width: 100px;
+        width: 100%;
+    
+    }
+    .plant_info_img{
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .more_info{
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width:360px){
+    .short_by{
+        flex-direction: column;
+    }
 }
