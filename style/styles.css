@@ -1186,24 +1186,45 @@ input[type="range"]::-moz-range-track {
         visibility:visible;
     }
     .offer_product_navigation{
-       position: relative; 
+        position: relative;
+        justify-content: flex-end;
     }
-    .offer_product_navigation::before{
+    .offer_product_navigation ul::before{
         content: "All Plants ⮇";
         cursor: pointer;
         font-weight: 700;
         z-index: -1;
+        color: #46A358;
+        padding: 3px;
     }
     .offer_product_navigation ul{
         flex-direction: column;
         position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: #E5E5E5;
+        row-gap: 10px;
     }
     .offer_product_navigation ul li{
         display: none;
     }
-    .offer_product_navigation:hover ul li{
-        display: list-item
-    ;
+    .offer_product_navigation ul li a{
+        border: none;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    .offer_product_navigation ul li:first-child a{
+        border-bottom: none;
+    }
+    .offer_product_navigation ul:hover li{
+        display: list-item;
+        background-color: #E5E5E5;
+        color: #fff;
+    } 
+    .offer_product_navigation ul li a:hover{
+        border-bottom: none;
     }
     
 }
